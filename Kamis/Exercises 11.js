@@ -1,6 +1,6 @@
 
 function changeMe(arr) {
-  // console.log(arr[0][1]);
+ 
   var no = 0;
   var fullName = '';
   for(var i=0; i < arr.length; i++){
