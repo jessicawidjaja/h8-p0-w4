@@ -1,5 +1,4 @@
 function ubahHuruf(kata) {
-  // you can only write your code here!
   var alfabet = 'abcdefghijklmnopqrstuvwxyz';
   var urutan = 0;
   var hurufSelanjutnya = '';
@@ -7,7 +6,7 @@ function ubahHuruf(kata) {
   for(var i = 0; i < kata.length; i ++) {
     urutan = alfabet.indexOf(kata[i]);
     hurufSelanjutnya += alfabet[urutan+1];
-  }
+}
   return hurufSelanjutnya;
 }
 
