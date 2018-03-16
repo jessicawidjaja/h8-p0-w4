@@ -1,5 +1,4 @@
 function cariMedian(arr) {
-
   if(arr.length%2 === 0) {
     var angka1 = arr[arr.length/2-1];
     var angka2 = arr[(arr.length/2)];
