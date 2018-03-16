@@ -1,31 +1,29 @@
 function cariModus(arr) {
   var index = 0;
   var banding = 0;
-  for (var i = 0; i < arr.length; i++){
-    var tampung = 0;
-    for (var j = 0 ; j < arr.length; j++){
-    if (arr[i] == arr[j] && i !== j){
+ for (var i = 0; i < arr.length; i++){
+   var tampung = 0;
+  for (var j = 0 ; j < arr.length; j++){
+   if (arr[i] == arr[j] && i !== j){
       tampung++;
-    if (tampung > banding){
+   if (tampung > banding){
       banding = tampung;
       index = i;
-    }
-   } 
 }
-}
+ } 
+  }
+   }
 
-if (banding === 0) {
-  return -1
+    if (banding === 0) {
+    return -1
 }
-  var arit=0;
-  for (var k = 0; k < arr.length; k++){
-    arit += arr[k];
+    var arit=0;
+  for (var k = 0; k < arr.length; k++){arit += arr[k];
     if (arit / arr.length === arr[k]) {
-     return -1
-    } 
-    
+    return -1
+}     
 }
-return arr[index];
+    return arr[index];
 }
 
 console.log(cariModus([10, 4, 5, 2, 4])); // 4
