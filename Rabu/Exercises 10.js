@@ -3,17 +3,13 @@ function checkAB(num) {
     var a;
     var b;
  
-    
-    for(var i = 0; i < num.length; i++){
+for(var i = 0; i < num.length; i++){
       
-        if(num[i] === 'a'){
-         a = i
-        }
-        
-        else if (num[i] === 'b'){
-           b = i   
-        }
-    }
+    if(num[i] === 'a'){a = i
+}       
+   else if (num[i] === 'b'){b = i   
+ }
+}
     return b - a === 4 || a - b === 4
   }
   
