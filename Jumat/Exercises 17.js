@@ -1,7 +1,6 @@
 
 function totalDigitRekursif(angka) {
   var arr = angka.toString();
-  // console.log(arr);
   if(arr.length === 1){
     return Number(angka);
   } else {
