@@ -18,19 +18,16 @@ function shoppingTime(memberId, money) {
     } else if(sisa >= 50000){
       chart.push('CasingHandphone');
       sisa -= 50000;
-      break; // kondisi dihentikan, karna hanya diperbolehkan masing2 membeli 1 item
+      break; 
     }
   }
-  // console.log(chart);
-  // console.log('Sisa Uang : ' + sisa);
-  
+ 
   var objProduct = {};
   objProduct.memberId = memberId;
   objProduct.money = money;
   objProduct.listPurchased = chart;
   objProduct.changeMoney = sisa;
-  // objProduct.
-  
+ 
   if(memberId === '' || memberId === undefined && money === undefined){
     return 'Mohon maaf, toko X hanya berlaku untuk member saja';
   } else if(money < 50000){
