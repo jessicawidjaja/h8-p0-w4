@@ -6,11 +6,11 @@ function tukarBesarKecil(kalimat) {
   for (var i = 0; i < jumlahArr; i++) {
     if (splitKalimat[i] === splitKalimat[i].toUpperCase()) {
         tampungKalimat[i] = splitKalimat[i].toLowerCase(); 
-    }
+}
     if (splitKalimat[i] === splitKalimat[i].toLowerCase()) {
         tampungKalimat[i] = splitKalimat[i].toUpperCase(); 
-    }
-  }
+}
+}
   return tampungKalimat.join('');
 }
 
