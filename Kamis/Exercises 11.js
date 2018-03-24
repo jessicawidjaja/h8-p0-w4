@@ -1,22 +1,22 @@
 
 function changeMe(arr) {
   var resultObj = {}
-  for(var j = 0; j < arr.length; j++){
-  var arrObj = {}
+    for(var j = 0; j < arr.length; j++){
+      var arrObj = {}
       arrObj.firstName = arr[j][0]
       arrObj.lastName = arr[j][1]
       arrObj.gender = arr[j][2];
-   if(arr[j][3] === undefined){
-      arrObj.age = 'Invalid Birth Year'
-}  else {
-      arrObj.age = 2018 - arr[j][3];
-}
-   console.log(arrObj)
-}
+      if(arr[j][3] === undefined){
+        arrObj.age = 'Invalid Birth Year'
+      } else {
+        arrObj.age = 2018 - arr[j][3];
+      }
+      console.log(arrObj)
+    }
     
-   if(arr.length === 0){
-   console.log('""')
-}
+    if(arr.length === 0){
+      console.log('""')
+    }
 }
 
 // TEST CASES
